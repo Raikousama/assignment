@@ -5,7 +5,6 @@ import com.pavan.openweatherassignment.model.conditions.Clouds;
 import com.pavan.openweatherassignment.model.conditions.Rain;
 import com.pavan.openweatherassignment.model.conditions.Snow;
 import com.pavan.openweatherassignment.model.conditions.Wind;
-import com.pavan.openweatherassignment.model.location.Coordinate;
 import java.util.Date;
 
 public class CurrentWeather {

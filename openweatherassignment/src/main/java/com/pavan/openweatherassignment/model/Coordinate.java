@@ -1,4 +1,4 @@
-package com.pavan.openweatherassignment.model.location;
+package com.pavan.openweatherassignment.model;
 
 import lombok.Data;
 
