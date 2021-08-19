@@ -16,8 +16,10 @@ public class DailyForecast {
   private Date date;
   private Date sunrise;
   private Date sunset;
-  private Date moonrise;
-  private Date moonset;
+  @JsonProperty(value = "moonrise")
+  private Date moonRise;
+  @JsonProperty(value = "moonset")
+  private Date moonSet;
   @JsonProperty(value = "moon_phase")
   private Double moonPhase;
   private int pressure;

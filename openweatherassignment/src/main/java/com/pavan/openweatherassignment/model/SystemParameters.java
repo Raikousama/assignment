@@ -14,10 +14,8 @@ public class SystemParameters {
   private String message;
   @JsonProperty(value ="country")
   private String country;
-//  @JsonAdapter(SecondsDateTypeAdapter.class)
   @JsonProperty(value ="sunrise")
   private Date sunrise;
-//  @JsonAdapter(SecondsDateTypeAdapter.class)
   @JsonProperty(value ="sunset")
   private Date sunset;
 }
