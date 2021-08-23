@@ -1,6 +1,10 @@
-package com.pavan.openweatherassignment.model;
+package com.pavan.openweatherassignment.model.forecast;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.pavan.openweatherassignment.model.Coordinate;
+import com.pavan.openweatherassignment.model.SystemParameters;
+import com.pavan.openweatherassignment.model.TempParameters;
+import com.pavan.openweatherassignment.model.Weather;
 import com.pavan.openweatherassignment.model.conditions.Clouds;
 import com.pavan.openweatherassignment.model.conditions.Rain;
 import com.pavan.openweatherassignment.model.conditions.Snow;
