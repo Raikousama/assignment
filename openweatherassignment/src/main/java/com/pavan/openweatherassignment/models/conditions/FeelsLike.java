@@ -1,9 +1,11 @@
-package com.pavan.openweatherassignment.model.conditions;
+package com.pavan.openweatherassignment.models.conditions;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class FeelsLike {
+  @JsonProperty(value ="day")
   private double day;
+  @JsonProperty(value ="night")
   private double night;
   @JsonProperty(value ="eve")
   private double evening;

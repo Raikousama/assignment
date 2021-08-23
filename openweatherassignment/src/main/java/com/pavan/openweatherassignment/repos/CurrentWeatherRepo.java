@@ -1,4 +1,4 @@
-package com.pavan.openweatherassignment.repo;
+package com.pavan.openweatherassignment.repos;
 
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 

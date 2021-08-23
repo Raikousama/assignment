@@ -1,4 +1,4 @@
-package com.pavan.openweatherassignment.model;
+package com.pavan.openweatherassignment.models;
 
 import org.springframework.data.annotation.Id;
 

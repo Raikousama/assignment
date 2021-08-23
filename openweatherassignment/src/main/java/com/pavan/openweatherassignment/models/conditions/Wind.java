@@ -1,15 +1,15 @@
-package com.pavan.openweatherassignment.model.conditions;
+package com.pavan.openweatherassignment.models.conditions;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
 public class Wind {
-  @JsonProperty(value ="speed")
+  @JsonProperty(value ="wind_speed")
   private double speed;
-  @JsonProperty(value ="deg")
+  @JsonProperty(value ="wind_deg")
   private int direction;
-  @JsonProperty(value ="gust")
+  @JsonProperty(value ="wind_gust")
   private double gust;
 
 }
