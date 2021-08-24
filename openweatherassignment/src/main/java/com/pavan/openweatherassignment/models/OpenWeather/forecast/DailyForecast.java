@@ -1,9 +1,9 @@
-package com.pavan.openweatherassignment.models.forecast;
+package com.pavan.openweatherassignment.models.OpenWeather.forecast;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.pavan.openweatherassignment.models.Temperature;
-import com.pavan.openweatherassignment.models.Weather;
-import com.pavan.openweatherassignment.models.conditions.FeelsLike;
+import com.pavan.openweatherassignment.models.OpenWeather.Temperature;
+import com.pavan.openweatherassignment.models.OpenWeather.Weather;
+import com.pavan.openweatherassignment.models.OpenWeather.conditions.FeelsLike;
 import java.util.Date;
 import java.util.List;
 import lombok.Data;

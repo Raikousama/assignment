@@ -1,5 +1,5 @@
 
-package com.pavan.openweatherassignment.models.conditions;
+package com.pavan.openweatherassignment.models.OpenWeather.conditions;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;

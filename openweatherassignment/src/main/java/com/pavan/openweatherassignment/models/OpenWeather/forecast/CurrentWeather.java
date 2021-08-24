@@ -1,17 +1,19 @@
-package com.pavan.openweatherassignment.models.forecast;
+package com.pavan.openweatherassignment.models.OpenWeather.forecast;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.pavan.openweatherassignment.models.Coordinate;
-import com.pavan.openweatherassignment.models.SystemParameters;
-import com.pavan.openweatherassignment.models.TempParameters;
-import com.pavan.openweatherassignment.models.Weather;
-import com.pavan.openweatherassignment.models.conditions.Clouds;
-import com.pavan.openweatherassignment.models.conditions.Rain;
-import com.pavan.openweatherassignment.models.conditions.Snow;
-import com.pavan.openweatherassignment.models.conditions.Wind;
+import com.pavan.openweatherassignment.models.OpenWeather.Coordinate;
+import com.pavan.openweatherassignment.models.OpenWeather.SystemParameters;
+import com.pavan.openweatherassignment.models.OpenWeather.TempParameters;
+import com.pavan.openweatherassignment.models.OpenWeather.Weather;
+import com.pavan.openweatherassignment.models.OpenWeather.conditions.Clouds;
+import com.pavan.openweatherassignment.models.OpenWeather.conditions.CurrentWind;
+import com.pavan.openweatherassignment.models.OpenWeather.conditions.Rain;
+import com.pavan.openweatherassignment.models.OpenWeather.conditions.Snow;
+import com.pavan.openweatherassignment.models.OpenWeather.conditions.Wind;
 import java.util.Date;
 import java.util.List;
 import lombok.Data;
+import org.springframework.data.mongodb.core.index.Indexed;
 
 @Data
 public class CurrentWeather {
@@ -25,7 +27,7 @@ public class CurrentWeather {
   @JsonProperty(value = "main")
   private TempParameters tempparameters;
   @JsonProperty(value = "wind")
-  private Wind wind;
+  private CurrentWind wind;
   @JsonProperty(value = "clouds")
   private Clouds clouds;
   @JsonProperty(value = "rain")
@@ -39,6 +41,7 @@ public class CurrentWeather {
   @JsonProperty(value ="sys")
   private SystemParameters systemParameters;
 
+  @Indexed(unique=true)
   @JsonProperty(value = "name")
   private String cityName;
 
