@@ -1,4 +1,4 @@
-package com.pavan.openweatherassignment.models.OpenWeather;
+package com.pavan.openweatherassignment.models.openweather;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Date;

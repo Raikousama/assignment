@@ -1,22 +1,22 @@
-package com.pavan.openweatherassignment.models.OpenWeather.forecast;
+package com.pavan.openweatherassignment.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.pavan.openweatherassignment.models.OpenWeather.Coordinate;
-import com.pavan.openweatherassignment.models.OpenWeather.SystemParameters;
-import com.pavan.openweatherassignment.models.OpenWeather.TempParameters;
-import com.pavan.openweatherassignment.models.OpenWeather.Weather;
-import com.pavan.openweatherassignment.models.OpenWeather.conditions.Clouds;
-import com.pavan.openweatherassignment.models.OpenWeather.conditions.CurrentWind;
-import com.pavan.openweatherassignment.models.OpenWeather.conditions.Rain;
-import com.pavan.openweatherassignment.models.OpenWeather.conditions.Snow;
-import com.pavan.openweatherassignment.models.OpenWeather.conditions.Wind;
+import com.pavan.openweatherassignment.models.openweather.Coordinate;
+import com.pavan.openweatherassignment.models.openweather.SystemParameters;
+import com.pavan.openweatherassignment.models.openweather.TempParameters;
+import com.pavan.openweatherassignment.models.openweather.Weather;
+import com.pavan.openweatherassignment.models.openweather.conditions.Clouds;
+import com.pavan.openweatherassignment.models.openweather.conditions.CurrentWind;
+import com.pavan.openweatherassignment.models.openweather.conditions.Rain;
+import com.pavan.openweatherassignment.models.openweather.conditions.Snow;
 import java.util.Date;
 import java.util.List;
-import lombok.Data;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 
-@Data
-public class CurrentWeather {
+public class CurrentWeatherDto {
+  @JsonProperty(value = "name")
+  private String cityName;
   @JsonProperty(value = "coord")
   private Coordinate coordinate;
   @JsonProperty(value = "weather")
@@ -40,13 +40,6 @@ public class CurrentWeather {
 
   @JsonProperty(value ="sys")
   private SystemParameters systemParameters;
-
-  @Indexed(unique=true)
-  @JsonProperty(value = "name")
-  private String cityName;
-
-  @JsonProperty(value ="id")
-  private long cityId;
 
   @JsonProperty(value = "cod")
   private int cod;
